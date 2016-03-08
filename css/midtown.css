@@ -1,0 +1,77 @@
+* My Custom Styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+  padding-bottom: 0px;
+  padding-top: 50px;
+}
+
+.navbar {
+  height: 50px;
+  font: normal 18px sans-serif;
+  font-weight: Bold;
+  padding-top: 0px;
+  background-color: #292c2f;
+}
+
+.navbar-header {
+  display: inline-block;
+}
+.navbar-brand {
+  float: left;
+  height: 45px;
+  padding: 0px 10px;
+  font-size: 18px;
+  line-height: 10px;
+}
+.navbar-right {
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color:  #ffffff;
+  
+}
+.navbar-search {
+  margin-top: 8px;
+  float: right;
+  color:  #FFF;
+  width: 35px;
+  height: 35px;
+  background-color:  #33383b;
+  border-radius: 2px;
+  font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+
+}
+span.badge.pull-left {
+    margin-right: 10px;
+}
+
+.map {
+  max-height: 300px;
+}
+
+.container {
+  padding-top: 25px;
+}
+
+.header {
+  font-size: 18px;
+  color: #292c2f;
+  padding-left: 10px;
+  padding-top: 40px;
+}
+
+@media (min-width: 250px) {
+  /* Navbar positioning foo */
+  .navbar-right {
+    float: right;
+    margin-right: -15px;
+  }

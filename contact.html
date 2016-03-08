@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head -->
+    <meta name="Mid-Town Coffee" content="Coffee Education">
+    <meta name="MG Biven" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Mid-Town Coffee</title>
+
+    <!-- CSS Links -->
+    
+    <!-- Normalize CSS -->  
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Bootstrap Carousel CSS -->
+    <link href="css/carousel.css" rel="stylesheet">
+    
+    <!-- MidTown Coffee CSS file -->
+    <link href="css/midtown.css" rel="stylesheet">
+    
+    <!-- Links CSS file -->
+    <link href="css/links.css" rel="stylesheet">
+    
+   <!-- This gets the fonts for the footer icons -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+    <!-- Footer Styling -->
+    <link href="css/footer-distributed.css" rel="stylesheet">
+    
+    <!-- Tumblr CSS -->
+    <link href="css/tumblr.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div ng-app="" ng-include="'templates/header.html'"></div>
+    <div ng-view></div>
+ 
+<h1 class="header"> Have some ideas on future articles? Drop us a note!</h1>    
+    
+<div class="container">
+ <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <! Will be used to display an alert to the user>
+        </div>
+    </div>
+</form>
+    
+    
+    
+    
+    </div>
+    <!-- Footer Definition --> 
+    
+       <footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-tumblr"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-envelope"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					·
+					<a href="blog.html">Blog</a>
+					·
+					<a href="#">Education</a>
+					·
+					<a href="links.html">Coffee Links</a>
+					·
+					<a href="contact.html">Contact Us</a>
+				</p>
+
+				<p>Mid-Town Coffee &copy; 2016</p>
+			</div>
+
+		</footer>
+
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

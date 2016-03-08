@@ -1,0 +1,54 @@
+ 
+.container {
+    width: 100%;
+    background: #BEBEBE;
+}
+ 
+.container:before, .container:after {
+    display: table;
+    content: "";
+}
+ 
+.container: after {
+    clear: both;
+}
+ 
+.container ul.fix-col {
+    padding: 10px;	
+    list-style-type: none;
+	font-size: 0;
+}
+ 
+.fix-col li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 4% 2%;
+    font-size: 14px;    
+}
+ 
+.fix-col li img {
+    width: 100%;
+    height: auto;
+}
+ 
+.fix-col-2 li {
+    width: 46%;
+}
+ 
+.fix-col-3 li {
+    width: 29.33%;
+}
+ 
+.fix-col-4 li {
+    width: 21%;
+}
+ 
+.fix-col-5 li {
+    width: 16%;
+}
+ 
+@media all and (max-width: 767px) {
+    .fix-col li {
+        font-size: 12px;    
+    }
+}
