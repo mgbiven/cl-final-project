@@ -80,11 +80,12 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 
   </head>
 
-  <body>
+  <body ng-app="">
 
-    <!-- Header template using Angular -->
-    <div ng-app="" ng-include="'templates/header.html'"></div>
+  <!-- Navbar using Angular template -->  
+    <div ng-include="'templates/header.html'"></div>
     <div ng-view></div>
+
  
 <h1 class="header"> Have some ideas on future articles? Drop us a note!</h1>    
     
@@ -132,38 +133,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
      </div>
    
     
-    <!-- Footer Definition --> 
-    
-       <footer class="footer-distributed">
-
-			<div class="footer-right">
-
-				<a href="#"><i class="fa fa-tumblr"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-envelope"></i></a>
-				<a href="#"><i class="fa fa-github"></i></a>
-
-			</div>
-
-			<div class="footer-left">
-
-				<p class="footer-links">
-					<a href="index.html">Home</a>
-					·
-					<a href="blog.html">Blog</a>
-					·
-					<a href="#">Education</a>
-					·
-					<a href="links.html">Coffee Links</a>
-					·
-					<a href="contact.html">Contact Us</a>
-				</p>
-
-				<p>Mid-Town Coffee &copy; 2016</p>
-			</div>
-
-		</footer>
-
+   <!-- Angular footer template -->
+    <div ng-include="'templates/footer.html'"></div>
 
     
     <!-- Bootstrap core JavaScript

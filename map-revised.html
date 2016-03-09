@@ -37,6 +37,7 @@
     <!-- Tumblr CSS -->
     <link href="css/tumblr.css" rel="stylesheet">
 
+<!-- Google Maps API Code -->
  <style>
   html, body, #map {
       height: 100%;
@@ -52,6 +53,7 @@
       var map;
       var infowindow;
 
+
       function initMap() {
         var pyrmont = {lat: 38.22281, lng: -85.69272};
 
@@ -59,7 +61,7 @@
           center: pyrmont,
           zoom: 13
         });
-
+           
         infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
         service.nearbySearch({
@@ -83,59 +85,32 @@
           map: map,
           position: place.geometry.location
         });
-
+         
         google.maps.event.addListener(marker, 'click', function() {
           infowindow.setContent(place.name);
           infowindow.open(map, this);
         });
-      }  
+      } 
+  
 </script>
   
 </head>
 
-  <body>
-   
-    <div ng-app="" ng-include="'templates/header.html'"></div>
+   <body ng-app="">
+
+  <!-- Navbar using Angular template -->  
+    <div ng-include="'templates/header.html'"></div>
     <div ng-view></div>
+
     
     
     <h1 class="header">Find A Coffee Shop Near You</h1>
     
     <div id="map"></div>
 
-  
- <!-- Footer Definition --> 
-    
-       <footer class="footer-distributed">
 
-			<div class="footer-right">
-
-				<a href="#"><i class="fa fa-tumblr"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-envelope"></i></a>
-				<a href="#"><i class="fa fa-github"></i></a>
-
-			</div>
-
-			<div class="footer-left">
-
-				<p class="footer-links">
-					<a href="index.html">Home</a>
-					·
-					<a href="blog.html">Blog</a>
-					·
-					<a href="education.html">Education</a>
-					·
-					<a href="links.html">Coffee Links</a>
-					·
-					<a href="contact.html">Contact Us</a>
-				</p>
-
-				<p>Mid-Town Coffee &copy; 2016</p>
-			</div>
-
-		</footer>
-
+  <!-- Angular footer template -->
+    <div ng-include="'templates/footer.html'"></div>
 
     
     <!-- Bootstrap core JavaScript
