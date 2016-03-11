@@ -55,7 +55,8 @@ span.badge.pull-left {
 }
 
 .map {
-  max-height: 300px;
+  height: 100%;
+  padding-top: 100px;
 }
 
 .container {
