@@ -78,6 +78,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <!-- Tumblr CSS -->
     <link href="css/tumblr.css" rel="stylesheet">
 
+    <!-- Education CSS -->
+    <link href="css/education.css" rel="stylesheet">    
   </head>
 
   <body ng-app="">

@@ -1,0 +1,63 @@
+strong {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+  color: azure;
+}
+
+.tile {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.tile .title {
+  margin-top: 0px;
+}
+.tile.purple, .tile.blue, .tile.red, .tile.gray-1, .tile.gray-2, .tile.green {
+  color: #fff;
+}
+.tile.gray-1 {
+  background: #47484b;
+}
+.tile.gray-1:hover {
+  background: #2a2c2f;
+}
+.tile.red {
+  background: #ac193d;
+}
+.tile.red:hover {
+  background: #7f132d;
+}
+.tile.gray-2 {
+  background: #000000;
+}
+.tile.gray-2:hover {
+  background: #2a2c2f;
+}
+.tile.blue {
+  background: #3795d4;
+}
+.tile.blue:hover {
+  background: #125acd;
+}
+.tile.purple {
+  background: #9999cc;
+}
+.tile.purple:hover {
+  background: #666699;
+}
+.tile.green {
+  background: #669966;
+}
+.tile.green:hover {
+  background: #336633;
+}
+
