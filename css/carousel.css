@@ -40,8 +40,8 @@ body {
 /* Carousel base class */
 .carousel {
   /* height: 400px; */
-  margin-bottom: 50px;
-  margin-top: px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -58,8 +58,28 @@ body {
   top: 0;
   left: 0;
   height: 400px;*/
-  min-width: 100%;
+  width: 100%;
 }
+
+.carousel-caption h1 {
+font-family: sans-serif;
+font-size:   40px;
+font-weight: bold;
+color:       azure;
+}
+/* Description text */
+.carousel-caption p {
+font-family:    Garamond;
+font-size:      30px;
+color:          azure;
+}
+/* Button text */
+.carousel-caption .btn {
+font-family:    Garamond;
+font-size:      1em;
+color:          azure;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
