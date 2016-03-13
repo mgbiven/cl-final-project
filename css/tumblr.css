@@ -3,8 +3,8 @@
 
 .tumblr_posts {	
   width: 100%;
-  list-style:none;
-  background: #BEBEBE;
+  list-style: none;
+  background: #999999;
 }
 .tumblr_post {		
   width: 100%;
@@ -34,10 +34,21 @@ text-align: center;
 
 }
 .tumblr_quote p {		
-
 }
 .tumblr_source {
   font-family: Arial, SimHei;
   font-size: 24px;
   text-align: center;
+}
+
+.blog-head {
+  text-align: center;
+
+}
+
+.h3-tumblr {
+  text-align: center;
+  color: black;
+  font-family: Arial, SimHei;
+  
 }
