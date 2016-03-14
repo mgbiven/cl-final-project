@@ -79,7 +79,11 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <link href="css/tumblr.css" rel="stylesheet">
 
     <!-- Education CSS -->
-    <link href="css/education.css" rel="stylesheet">    
+    <link href="css/education.css" rel="stylesheet">
+    
+     <!-- Search Bar CSS -->
+    <link href="css/search.css" rel="stylesheet">
+    
   </head>
 
   <body ng-app="">
