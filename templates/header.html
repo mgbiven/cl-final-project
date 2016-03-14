@@ -1,20 +1,29 @@
     <nav class="navbar navbar-default navbar-fixed-top  navbar-inverse">
-      
-      <div class="container-fluid">
-        <div class="navbar-header">    
+     <div class="container-fluid">
+      <div class="navbar-header"> 
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse"> 
+            <span class="sr-only">Toggle Nav</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>  
+        
           <a class="navbar-brand" href="index.html"><img src=/img/mtc-logo.jpg></a>
-          <p class="navbar-right"> Mid-Town Coffee</p>
-        </div>
-      <div class="row">
-        <div class="col-md-6 col-sm-offset-3">   
-          <form action="" class="search-form">
-            <div class="form-group has-feedback collapse navbar-collapse">
-              <label for="search" class="sr-only">Search</label>
-              <input type="text" class="form-control input-sm" maxlength="20" placeholder="Search" />
-              <span class="glyphicon glyphicon-search form-control-feedback"></span>
-            </div>
-          </form>
-        </div>
+         <p class="navbar-right"> Mid-Town Coffee</p>
+      </div>  
+      
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          
+          <div class="col-sm-3 col-sm-3 pull-right">
+           <form class="navbar-form" role="search">
+             <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                 <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                 </div>
+             </div>
+           </form>
+          </div>
+        </div>  
       </div>
-      </div><!-- /.container-fluid -->
     </nav>
