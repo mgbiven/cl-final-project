@@ -76,27 +76,27 @@
         
        
         google.maps.event.addListener(map, 'click', function(event) {  
-          startLoc = {lat: event.latLng.lat(), lng: event.latLng.lng()};
-          var infowindow = new google.maps.InfoWindow();
-          var service = new google.maps.places.PlacesService(map);
-          
-          
-          service.nearbySearch({
-            location: startLoc,
-            radius: 2000,
-            type: ['cafe']
-            }, callback);  
-        });
+        var startloc = event.latLng;
+        var infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+        service.nearbySearch({
+          location: startLoc,
+          radius: 500,
+          type: ['cafe']
+        }, callback);  
+          alert('is this running' +latLng+);
+            });
         
         
         infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
         service.nearbySearch({
           location: startLoc,
-          radius: 2000,
+          radius: 500,
           type: ['cafe']
         }, callback);
       }
+  
   
       function callback(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -106,18 +106,18 @@
         }
       }
 
-     function createMarker(place) {
+      function createMarker(place) {
         var placeLoc = place.geometry.location;
         var marker = new google.maps.Marker({
-         map: map,
-        position: place.geometry.location
-       });
+          map: map,
+          position: place.geometry.location
+        });
          
-      google.maps.event.addListener(marker, 'click', function() {
-        infowindow.setContent(place.name);
-        infowindow.open(map, this);
-       });
-      }
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
+      } 
  
   //google.maps.event.addDomListener(window, 'load', initialize);
 
