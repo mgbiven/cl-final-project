@@ -48,7 +48,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <!-- The above 3 meta tags *must* come first in the head -->
     <meta name="Mid-Town Coffee" content="Coffee Education">
     <meta name="MG Biven" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="/img/favicon.ico">
 
     <title>Mid-Town Coffee</title>
 
