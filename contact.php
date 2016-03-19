@@ -81,9 +81,6 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <!-- Education CSS -->
     <link href="css/education.css" rel="stylesheet">
     
-     <!-- Search Bar CSS -->
-    <link href="css/search.css" rel="stylesheet">
-    
   </head>
 
   <body ng-app="">
