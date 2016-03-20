@@ -55,7 +55,10 @@
 <script>
       var map;
       var infowindow;
-
+  
+  // added to see if this will help delete old markers
+      var markers = []; 
+  //
 
       function initMap() {
         var startLoc = {lat: 38.22281, lng: -85.69272};
@@ -76,7 +79,6 @@
           startLoc = {lat: event.latLng.lat(), lng: event.latLng.lng()};
           var infowindow = new google.maps.InfoWindow();
           var service = new google.maps.places.PlacesService(map);
-          
           
           service.nearbySearch({
             location: startLoc,
@@ -109,7 +111,10 @@
          map: map,
         position: place.geometry.location
        });
-         
+      
+       // added to help delete
+       markers.push(marker);
+       
       google.maps.event.addListener(marker, 'click', function() {
         infowindow.setContent(place.name);
         infowindow.open(map, this);
@@ -144,7 +149,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
     <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
-    <script src="/js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVpFhAkPdSIEEL6qba1rztvLfjYngvmb4&libraries=places&callback=initMap" async defer></script>   
   </body>
 </html>
